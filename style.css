@@ -1,0 +1,200 @@
+
+:root{
+    --c1:#333333;
+    --c2:#4caf50;
+    --c3:#ffffff;
+    --c4:#ed1c24;
+    --linealgradiente:linear-gradient(60deg,rgba(6, 0, 0,.9),rgba(5, 51, 21, 0.6),rgba(228, 216, 216,.2));
+    --lineargradFooter:linear-gradient(60deg,rgba(6, 0, 0,.9),rgba(2, 18, 8, 0.6),rgba(22, 4, 4, 0.2));
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+header{
+   
+    
+    background-image: var(--linealgradiente),url("./guitarra3.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-bottom: rgba(14, 14, 14,.5) 5px solid;
+   
+    height: 20%;
+    color:var(--c3);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    position: relative;
+   
+}
+
+ul{
+    
+    display: flex;  
+  list-style:none;
+ 
+    
+}
+ul li{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+   
+  
+    
+}
+
+li a{
+    /* margin-right: 5rem; */
+    color:var(--c3);
+    text-decoration: none;
+  
+    
+   
+    
+}
+
+
+    
+
+.main{
+    background-color: var(--c3);
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-content: center; */
+    gap: 2rem;
+}
+
+
+.card{
+    margin-top: 6rem;
+    border:#333333 solid 1px;
+    padding: 2.5rem;
+   
+    max-width: 20% ;
+    max-height: 75%;
+    font-size: .7rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(101, 100, 100);
+    background-color: burlywood;
+    flex-wrap: wrap;
+
+}
+.description{
+    text-align:justify;
+    margin: .2rem;
+    width: 95% ;
+    padding-top: .2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+
+img{
+    
+    width: 100%;
+    border-radius:20% ;
+    box-shadow: -10px -10px 20px gray;
+   
+    
+}
+
+footer{
+    background-color: var(--c1);   
+    background-image:var(--lineargradFooter) ;
+    height: 10%;
+    color:var(--c3);
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.botonCarrito{
+    background-color: var(--c2);
+    height: 3rem;
+    width:60% ;
+    margin-top: .5rem;
+    color:var(--c3);
+    padding: 1px;
+    box-shadow: 1px  1px 1px black;
+    border-radius: 10px;
+    transition: .3s all ease-in-out ;
+   
+}
+
+.botonCarrito:hover{
+    transform: scale(1.5);
+    border:2px solid  #ed1c24;
+}
+
+#anuncio{
+   
+  
+    background-color: var(--c2);
+    background: linear-gradient(15deg,green,black);
+    width: 20%;
+    height:45% ;
+    position: absolute;
+    left: -20%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: justify;
+    padding:1rem ;
+    
+    
+    
+}
+
+   
+
+
+#anuncio h4{
+    color: darkorange;
+    text-align: center;
+    
+    margin-top: 1rem;
+}
+#anuncio h3{
+    
+    text-align: center;
+   
+}
+
+
+.animar{
+    animation:mover 2s ease-in-out .1s;
+
+}
+
+
+        /*ANIMACIONES*/
+
+        @keyframes mover{
+            0% { transform:translateX(0%); }
+            25% { transform:translateX(110%); }
+            50% { transform:translateX(110%); }
+            75% { transform:translateX(110%); }
+
+            100% { transform:translateX(0%); }
+            
+            
+            }
