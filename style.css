@@ -216,7 +216,7 @@ footer{
 
         /*ANIMACIONES*/
 
-        @keyframes mover{
+@keyframes mover{
             0% { transform:translateX(0%); }
             25% { transform:translateX(110%); }
             50% { transform:translateX(110%); }
@@ -226,3 +226,94 @@ footer{
             
             
             }
+
+
+/*===========================Media querie ===========================*/
+            @media (max-width: 360px) {
+
+
+
+
+                body{
+                    font-size: .8rem;
+                }
+                ul li{
+                    padding-left: .5rem;
+                    padding-right: .5rem;
+                }
+            
+                header{                   
+                   
+                    height: 20%; 
+                    /* width: 100%;          */
+                    padding-top:1rem ;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    position: relative;
+                    
+                   
+                }
+
+
+        .card{
+            /* margenes */
+            margin-top: 15%;
+            /* margin-bottom: 2%;             */
+            padding: .2rem;
+
+           
+            
+
+            /* texto */
+            font-size: .5rem;
+            text-align: center;
+
+        
+
+        }
+
+    #anuncio{       
+        
+        position: fixed;
+        left: -25%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align:center;
+        padding:.5rem ;
+        font-size: .3rem;
+        width:5rem ;
+    }
+    .main{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+    }
+    
+    .frame{
+        width: 50%;
+        /* margin: auto; */
+        padding-top: .8rem;
+    }
+
+    .botonCarrito{
+        
+        height: 2rem;
+        width:70% ;
+        margin-top: .5rem;
+    margin-bottom: ;
+        padding: .4rem;
+        box-shadow: 1px  1px 1px black;
+        border-radius: 10px;
+        transition: .3s all ease-in-out ;
+    
+    }
+    
+}
